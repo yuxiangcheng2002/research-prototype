@@ -17,6 +17,8 @@ claude plugin eval . --no-publish --trust-plugin --scaffold \
 ```
 
 - `--no-publish` keeps the HTML report local (the CLI publishes by default).
+  Results are written to `evals/results/`, which the repo's `.gitignore`
+  excludes.
 - `--scaffold` and `--trust-plugin` run the cases' `seed.sh` scripts and the
   skill as you, on your machine. The bundled `seed.sh` files only create
   files in the run's temporary workspace, but read them before running, as

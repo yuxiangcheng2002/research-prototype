@@ -47,9 +47,13 @@ captured repos land there; otherwise the skill asks once.
 - **Checked specs.** Specifications are looked up against the specific part
   or datasheet and cited, not recalled.
 
-Companion skills named in `SKILL.md` (bench, CAD, PCB, procurement,
-fabrication-research workflows) are optional. Without them, this skill does
-that work itself.
+`SKILL.md` names companion skills that hand off specific work: `circuit`
+(bench and firmware), `hard-cad` / `hard-eda` (mechanical and PCB design),
+`hard-bom` (procurement), `fabresearch` (fabrication-research workflows),
+`theorize` (theory questions), `taobao` (marketplace listings), and
+`research-handoff` (packaging a finished conversation). They are the
+author's own skills and are not published. All are optional: without them,
+this skill does the work itself or answers directly.
 
 ## Layout
 
@@ -59,6 +63,7 @@ that work itself.
 | `references/templates.md` | CLAUDE.md / README templates for captured repos |
 | `references/maintenance.md` | dead ends and eval-harness pitfalls, for maintainers |
 | `evals/` | behaviour tests for `claude plugin eval`; see [evals/README.md](evals/README.md) |
+| `.gitignore` | keeps local eval results (`evals/results/`) out of commits |
 
 ## Status
 
