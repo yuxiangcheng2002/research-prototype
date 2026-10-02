@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: fab-capture-uses-map
+tags: [phase2, fabrication]
+runs: 1
+context:
+  # Seeds a fabrication-research repo with a fabresearch map so the capture
+  # must file into mapped paths instead of inventing a layout.
+  scaffold_script: seed.sh
